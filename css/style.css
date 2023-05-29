@@ -1,6 +1,144 @@
 @import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,900&family=Merriweather&display=swap");
 @import 'animate.css';
+.carrera {
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 162px;
+}
+.carrera .lap-day {
+  padding-top: 1%;
+}
+.carrera .lap-day h2 {
+  font-size: 15px;
+  color: white;
+}
+.carrera .lap-day .lap {
+  display: flex;
+  padding-bottom: 3%;
+  align-items: center;
+  gap: 3%;
+}
+.carrera .lap-day .lap img {
+  width: 125px;
+  border-top: 2px solid rgba(255, 255, 255, 0.658);
+  border-right: 2px solid rgba(255, 255, 255, 0.658);
+  border-radius: 0 10px 0 0;
+  padding: 2%;
+}
+.carrera .lap-day .lap h3 {
+  width: 339px;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+.carrera .lap-time {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-width: 466px;
+}
+.carrera .lap-time .race-time {
+  padding-bottom: 2%;
+}
+.carrera .lap-time .race-time h2 {
+  font-size: 20px;
+  color: white;
+}
+.carrera .lap-time .race-time .time {
+  border-top: 2px solid rgba(255, 255, 255, 0.658);
+  display: flex;
+  gap: 4%;
+  text-align: center;
+  justify-content: center;
+  padding-top: 3%;
+}
+.carrera .lap-time .race-time .time .day h2 {
+  font-size: 40px;
+}
+.carrera .lap-time .race-time .time .day h3 {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.658);
+}
+.carrera .lap-time .race-time .time .hrs {
+  border-right: 2px solid rgba(255, 255, 255, 0.658);
+  border-left: 2px solid rgba(255, 255, 255, 0.658);
+  padding: 0 10px 0 10px;
+}
+.carrera .lap-time .race-time .time .hrs h2 {
+  font-size: 40px;
+}
+.carrera .lap-time .race-time .time .hrs h3 {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.658);
+}
+.carrera .lap-time .race-time .time .min h2 {
+  font-size: 40px;
+}
+.carrera .lap-time .race-time .time .min h3 {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.658);
+}
+.carrera .lap-time img {
+  width: 70px;
+  height: 70px;
+}
+
+@media screen and (max-width: 480px) {
+  body main {
+    display: flex;
+    flex-direction: column;
+  }
+  body main .carrera {
+    display: inline-block;
+    padding: 1%;
+    height: fit-content;
+  }
+  body main .carrera .lap-day {
+    width: 100%;
+  }
+  body main .carrera .lap-day h2 {
+    font-size: 12px;
+  }
+  body main .carrera .lap-day .lap img {
+    width: 24%;
+  }
+  body main .carrera .lap-day .lap h3 {
+    font-size: 7vw;
+  }
+  body main .carrera .lap-time {
+    justify-content: start;
+    padding-left: 8%;
+  }
+  body main .carrera .lap-time .race-time h2 {
+    font-size: 4vw;
+  }
+  body main .carrera .lap-time .race-time .time .day h2 {
+    font-size: 7vw;
+  }
+  body main .carrera .lap-time .race-time .time .day h3 {
+    font-size: 2vw;
+  }
+  body main .carrera .lap-time .race-time .time .hrs h2 {
+    font-size: 7vw;
+  }
+  body main .carrera .lap-time .race-time .time .hrs h3 {
+    font-size: 2vw;
+  }
+  body main .carrera .lap-time .race-time .time .min h2 {
+    font-size: 7vw;
+  }
+  body main .carrera .lap-time .race-time .time .min h3 {
+    font-size: 2vw;
+  }
+  body main .carrera .lap-time img {
+    width: 19vw;
+    height: 100%;
+  }
+}
+
 .container-fluid {
   padding-left: 1%;
   align-items: end;
@@ -185,82 +323,50 @@ footer div ul a .bi-twitch:hover {
   color: black;
 }
 
-.carrera {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  min-width: 375px;
-}
-.carrera .lap-day {
-  padding-top: 1%;
-}
-.carrera .lap-day h2 {
-  font-size: 15px;
-  color: white;
-}
-.carrera .lap-day .lap {
-  display: flex;
-  padding-bottom: 3%;
-  align-items: center;
-  gap: 3%;
-}
-.carrera .lap-day .lap img {
-  width: 125px;
-  border-top: 2px solid rgba(255, 255, 255, 0.658);
-  border-right: 2px solid rgba(255, 255, 255, 0.658);
-  border-radius: 0 10px 0 0;
-  padding: 2%;
-}
-.carrera .lap-day .lap h3 {
-  width: 339px;
-  font-size: 35px;
-  font-weight: bold;
-  color: white;
-}
-.carrera .lap-time {
-  width: 35%;
+.carrera .nombres-podio {
+  width: 40%;
+  height: 100%;
   border-radius: 20px;
+  display: flex;
 }
-.carrera .lap-time .practice {
+.carrera .nombres-podio .practice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url(../../img/lineas-diag.png);
   background-size: 500px;
   background-color: rgb(44, 44, 44);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  width: 100%;
   text-align: center;
-  min-width: 142px;
-  min-height: 162px;
+  width: 30%;
+  justify-content: center;
   border-radius: 20px 0 0 20px;
 }
-.carrera .lap-time .practice .practice2 p {
+.carrera .nombres-podio .practice .practice2 p {
   color: white;
   font-size: 15px;
   font-weight: bold;
 }
-.carrera .lap-time .practice h2 {
+.carrera .nombres-podio .practice h2 {
   color: white;
   font-size: 17px;
   margin: 0;
 }
-.carrera .lap-time .puestos {
+.carrera .nombres-podio .puestos {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 162px;
   background-color: rgb(44, 44, 44);
   border-radius: 0 20px 20px 0;
   padding: 5px;
+  width: 65%;
 }
-.carrera .lap-time .puestos .puesto-piloto {
+.carrera .nombres-podio .puestos .puesto-piloto {
   display: flex;
   justify-content: space-between;
   text-align: start;
   padding-right: 1%;
 }
-.carrera .lap-time .puestos .puesto-piloto h3 {
+.carrera .nombres-podio .puestos .puesto-piloto h3 {
   min-width: 33px;
   color: white;
   border-right: 2px solid rgba(255, 255, 255, 0.616);
@@ -270,14 +376,14 @@ footer div ul a .bi-twitch:hover {
   font-weight: bold;
   margin: 0;
 }
-.carrera .lap-time .puestos .puesto-piloto h2 {
+.carrera .nombres-podio .puestos .puesto-piloto h2 {
   padding-left: 10px;
   width: 210px;
   font-size: 14px;
   color: white;
   margin: 0;
 }
-.carrera .lap-time .puestos .puesto-piloto .crono {
+.carrera .nombres-podio .puestos .puesto-piloto .crono {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,7 +392,7 @@ footer div ul a .bi-twitch:hover {
   width: 25%;
   max-height: 41px;
 }
-.carrera .lap-time .puestos .puesto-piloto .crono p {
+.carrera .nombres-podio .puestos .puesto-piloto .crono p {
   margin: 0;
   font-size: 10px;
   color: rgba(255, 255, 255, 0.493);
@@ -315,6 +421,7 @@ footer div ul a .bi-twitch:hover {
 }
 .video-head .content-vid .st-v {
   display: flex;
+  position: relative;
   align-items: center;
   justify-content: space-around;
   border-top: 8px solid #00352F;
@@ -538,25 +645,96 @@ footer div ul a .bi-twitch:hover {
 }
 
 @media screen and (max-width: 480px) {
-  body main .video-head h1 {
-    font-size: 30px;
-    padding-left: 5%;
+  body main .carrera .nombres-podio {
+    width: 100%;
+    justify-content: center;
   }
-  body main .video-head .st-v {
+  body main .carrera .nombres-podio .practice {
+    width: 100%;
+    text-align: center;
+  }
+  body main .carrera .nombres-podio .puestos {
+    width: 175%;
+    height: 162px;
+  }
+  body main .carrera .nombres-podio .puestos .puesto-piloto {
+    display: flex;
+    justify-content: space-between;
+    text-align: start;
+    padding-right: 1%;
+  }
+  body main .carrera .nombres-podio .puestos .puesto-piloto h3 {
+    min-width: 33px;
+    color: white;
+    border-right: 2px solid rgba(255, 255, 255, 0.616);
+    padding-right: 10px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    margin: 0;
+  }
+  body main .carrera .nombres-podio .puestos .puesto-piloto h2 {
+    padding-left: 10px;
+    width: 210px;
+    font-size: 14px;
+    color: white;
+    margin: 0;
+  }
+  body main .carrera .nombres-podio .puestos .puesto-piloto .crono {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(68, 67, 67);
+    border-radius: 20px;
+    width: 25%;
+    max-height: 41px;
+  }
+  body main .carrera .nombres-podio .puestos .puesto-piloto .crono p {
+    margin: 0;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.493);
+  }
+  body main .video-head .vid h1 {
+    text-align: center;
+  }
+  body main .video-head .content-vid {
+    flex-direction: column;
+  }
+  body main .video-head .content-vid .st-v {
+    flex-direction: column;
     padding: 2% 2% 2% 2%;
-    border-left: 8px solid red;
-    border-radius: 20px 20px 50px 50px;
+    border-left: 8px solid #00352F;
+    border-radius: 20px 20px 20px 20px;
     border-bottom: 0px solid black;
+    height: 100%;
   }
-  body main .video-head .st-v h2 {
+  body main .video-head .content-vid .st-v h2 {
     left: 28%;
     padding-left: 10px;
   }
-  body main .video-head .st-v .start-v {
-    flex-direction: column;
+  body main .video-head .content-vid .st-v .vid-start {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 4%;
   }
-  body main .video-head .st-v .vid-start-2 {
+  body main .video-head .content-vid .st-v .vid-start .video-1 {
+    width: 100%;
+  }
+  body main .video-head .content-vid .st-v .vid-start-2 {
     padding: 0 20px 0 20px;
+  }
+  body main .video-head .content-vid .st-v .vid-start-2 .video-2 {
+    width: 100%;
+  }
+  body main .video-head .content-vid .feature-vid {
+    width: 100%;
+    text-align: center;
+  }
+  body main .video-head .content-vid .feature-vid .vid-start-2 {
+    padding: 0 8% 0 8%;
+  }
+  body main .video-head .content-vid .feature-vid .vid-start-2 .video-2 {
+    width: 100%;
   }
   body main .video-head h2 {
     font-size: 25px;
@@ -569,6 +747,7 @@ footer div ul a .bi-twitch:hover {
     height: 300px;
   }
   body main .related {
+    text-align: center;
     padding-top: 5%;
     padding-bottom: 0;
     gap: 2%;
@@ -580,7 +759,7 @@ footer div ul a .bi-twitch:hover {
     padding-bottom: 20px;
   }
   body main .related .grid-related {
-    gap: 0;
+    gap: 30px;
   }
   body main .related .grid-related .grid-rel-fila {
     flex-direction: column;
@@ -593,9 +772,21 @@ footer div ul a .bi-twitch:hover {
   body main .related .grid-related .grid-rel-fila .video-f1 a, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a {
     display: flex;
   }
+  body main .related .grid-related .grid-rel-fila .video-f1 a .video-play, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a .video-play, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a .video-play, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a .video-play, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a .video-play, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a .video-play, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a .video-play {
+    height: 100%;
+  }
   body main .related .grid-related .grid-rel-fila .video-f1 a .video-play .img-video-f1, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a .video-play .img-video-f1, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a .video-play .img-video-f1, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a .video-play .img-video-f1, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a .video-play .img-video-f1, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a .video-play .img-video-f1, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a .video-play .img-video-f1 {
     width: 210px;
-    height: 245px;
+    height: 258px;
+  }
+  body main .related .grid-related .grid-rel-fila .video-f1 a .text-video i, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a .text-video i, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a .text-video i, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a .text-video i, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a .text-video i, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a .text-video i, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a .text-video i {
+    left: -50px;
+    top: 0;
+    border-radius: 0 0 0 20px;
+  }
+  body main .related .grid-related .grid-rel-fila .video-f1 a:hover .text-video, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a:hover .text-video, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a:hover .text-video, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a:hover .text-video, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a:hover .text-video, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a:hover .text-video, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a:hover .text-video {
+    transform: scaleY(1);
+    transform: scaleX(1.1);
   }
 }
 
@@ -812,15 +1003,46 @@ footer div ul a .bi-twitch:hover {
 }
 
 @media screen and (max-width: 480px) {
+  body main .contitulo1 {
+    height: 200px;
+  }
   body main .pilotos-grid {
-    height: 5490px;
+    height: 6850px;
   }
   body main .pilotos-grid .filas {
     flex-direction: column;
   }
+  body main .pilotos-grid .filas .pilotos .face {
+    width: 75vw;
+  }
+  body main .pilotos-grid .filas .pilotos .back {
+    height: 87%;
+  }
+  body main .pilotos-grid .filas .pilotos .back img {
+    right: 0%;
+    top: 0%;
+    width: 50%;
+  }
   body main .pilotos-grid .filas-4 {
     padding: 0 10% 0 10%;
     flex-direction: column;
+  }
+  body main .pilotos-grid .filas-4 .pilotos .face {
+    width: 75vw;
+  }
+  body main .pilotos-grid .filas-4 .pilotos .back {
+    height: 87%;
+  }
+  body main .pilotos-grid .filas-4 .pilotos .back img {
+    right: 0%;
+    top: 0%;
+    width: 50%;
+  }
+  body main .pilotos-grid .publicidad-pilotos {
+    height: 200px;
+  }
+  body main .pilotos-grid .publicidad-pilotos .publi-container {
+    margin: 4%;
   }
 }
 
@@ -1341,18 +1563,18 @@ footer div ul a .bi-twitch:hover {
     flex-direction: column;
     justify-content: space-evenly;
   }
+  body main .publicidad .publi-container {
+    margin: 4%;
+  }
   body main .contenedor-grid {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 50% 20% 20% 20%;
     grid-template-areas: "newvid newvid" "colvid1 colvid2" "colvid1 colvid2" "colvid1 colvid2" "morenews morenews";
     gap: 0%;
   }
   body main .contenedor-grid .newvid {
     border-right: 0;
     border-radius: 25px 25px 0 0;
-    margin-bottom: 0;
-    gap: 0;
-    justify-content: space-around;
+    margin-bottom: 35px;
   }
   body main .contenedor-grid .colvid1 {
     margin-left: 0;
@@ -1375,8 +1597,7 @@ footer div ul a .bi-twitch:hover {
     height: 280px;
   }
   body main .morenews {
-    margin-top: 40%;
-    margin-bottom: 4%;
+    margin-top: -55%;
     display: flex;
     flex-direction: column;
   }
@@ -1535,91 +1756,6 @@ footer div ul a .bi-twitch:hover {
   body main .equipos-grid .filas-equipos .equipo-auto {
     width: 100%;
   }
-}
-
-.carrera {
-  background-color: black;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 162px;
-}
-.carrera .lap-day {
-  padding-top: 1%;
-}
-.carrera .lap-day h2 {
-  font-size: 15px;
-  color: white;
-}
-.carrera .lap-day .lap {
-  display: flex;
-  padding-bottom: 3%;
-  align-items: center;
-  gap: 3%;
-}
-.carrera .lap-day .lap img {
-  width: 125px;
-  border-top: 2px solid rgba(255, 255, 255, 0.658);
-  border-right: 2px solid rgba(255, 255, 255, 0.658);
-  border-radius: 0 10px 0 0;
-  padding: 2%;
-}
-.carrera .lap-day .lap h3 {
-  width: 339px;
-  font-size: 35px;
-  font-weight: bold;
-  color: white;
-}
-.carrera .lap-time {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-width: 466px;
-}
-.carrera .lap-time .race-time {
-  padding-bottom: 2%;
-}
-.carrera .lap-time .race-time h2 {
-  font-size: 20px;
-  color: white;
-}
-.carrera .lap-time .race-time .time {
-  border-top: 2px solid rgba(255, 255, 255, 0.658);
-  display: flex;
-  gap: 4%;
-  text-align: center;
-  justify-content: center;
-  padding-top: 3%;
-}
-.carrera .lap-time .race-time .time .day h2 {
-  font-size: 40px;
-}
-.carrera .lap-time .race-time .time .day h3 {
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.658);
-}
-.carrera .lap-time .race-time .time .hrs {
-  border-right: 2px solid rgba(255, 255, 255, 0.658);
-  border-left: 2px solid rgba(255, 255, 255, 0.658);
-  padding: 0 10px 0 10px;
-}
-.carrera .lap-time .race-time .time .hrs h2 {
-  font-size: 40px;
-}
-.carrera .lap-time .race-time .time .hrs h3 {
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.658);
-}
-.carrera .lap-time .race-time .time .min h2 {
-  font-size: 40px;
-}
-.carrera .lap-time .race-time .time .min h3 {
-  font-size: 10px;
-  color: rgba(255, 255, 255, 0.658);
-}
-.carrera .lap-time img {
-  width: 70px;
-  height: 70px;
 }
 
 * {

@@ -102,3 +102,91 @@
         }
     }
 }
+
+body{
+    @include media-query(mobile){
+        main{
+            display: flex;
+            flex-direction: column;
+
+            .carrera{
+                display: inline-block;
+                padding: 1%;
+                height: fit-content;
+                .lap-day{
+                    width: 100%;
+                    
+                    h2{
+                        font-size: 12px;
+                    }
+
+                    .lap{
+
+                        img{
+                            width: 24%;
+                        }
+
+                        h3{
+                            font-size: 7vw;
+                        }
+                    }
+                }
+
+                .lap-time{
+                    justify-content: start;
+                    padding-left: 8%;
+                    .race-time{
+                        
+                        h2{
+                            font-size: 4vw;
+                        }
+
+                        .time{
+                            
+                            .day{
+                                
+                                h2{
+                                    font-size: 7vw;
+                                }
+    
+                                h3{
+                                    font-size: 2vw;
+                                }
+                            }
+
+                            .hrs{
+
+                                h2{
+                                    font-size: 7vw;
+                                }
+    
+                                h3{
+                                    font-size: 2vw;
+                                }
+                            }
+
+                            .min{
+
+                                h2{
+                                    font-size: 7vw;
+                                }
+    
+                                h3{
+                                    font-size: 2vw;
+                                }
+                            }
+                            
+                        }
+                    }
+                    
+                    img{
+                        width: 19vw;
+                        height: 100%;
+                    }
+
+                }
+            }
+        }
+    }
+}
+    

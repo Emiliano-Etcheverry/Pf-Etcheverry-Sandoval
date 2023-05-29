@@ -190,9 +190,15 @@ body{
             flex-direction: column;
             justify-content: space-evenly;
         
+            .publicidad{
+                
+                .publi-container{
+                    margin: 4%;
+                }
+            }
+
             .contenedor-grid{
                 grid-template-columns: 1fr 1fr;
-                grid-template-rows: 50% 20% 20% 20%;
                 grid-template-areas: 
                 "newvid newvid"
                 "colvid1 colvid2"
@@ -204,9 +210,8 @@ body{
                 .newvid{
                     border-right: 0;
                     border-radius: 25px 25px 0 0;
-                    margin-bottom: 0;
-                    gap: 0;
-                    justify-content: space-around;
+                    margin-bottom: 35px;
+                    
                 }
 
                 .colvid1{
@@ -235,8 +240,7 @@ body{
             }
 
             .morenews{
-                margin-top: 40%;
-                margin-bottom: 4%;
+                margin-top: -55%;
                 display: flex;
                 flex-direction: column;
             

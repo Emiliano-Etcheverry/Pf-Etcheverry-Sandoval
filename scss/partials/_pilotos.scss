@@ -255,18 +255,65 @@ body{
         
         main{
 
+            .contitulo1{
+                height: 200px;
+            }
+
             .pilotos-grid{
-                height: 5490px;
+                height: 6850px;
 
                 .filas{
                     flex-direction: column;
+
+                    .pilotos{
+
+                        .face{
+                            width: 75vw;
+                        }
+
+                        .back{
+                            height: 87%;
+                            
+                            img{
+                                right: 0%;
+                                top: 0%;
+                                width: 50%;
+                            }
+                        }     
+                    }
                 }
 
                 .filas-4{
                     padding: 0 10% 0 10%;
                     flex-direction: column;
+
+                    .pilotos{
+
+                        .face{
+                            width: 75vw;
+                        }
+
+                        .back{
+                            height: 87%;
+                            
+                            img{
+                                right: 0%;
+                                top: 0%;
+                                width: 50%;
+                            }
+                        }     
+                    }
+                }
+
+                .publicidad-pilotos{
+                    height: 200px;
+
+                    .publi-container{
+                        margin: 4%;
+                    }
                 }
             }
+
         }
     }
 }
