@@ -38,7 +38,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  min-width: 466px;
 }
 .carrera .lap-time .race-time {
   padding-bottom: 2%;
@@ -93,7 +92,7 @@
   }
   body main .carrera {
     display: inline-block;
-    padding: 1%;
+    padding: 2%;
     height: fit-content;
   }
   body main .carrera .lap-day {
@@ -111,6 +110,7 @@
   body main .carrera .lap-time {
     justify-content: start;
     padding-left: 8%;
+    min-width: none;
   }
   body main .carrera .lap-time .race-time h2 {
     font-size: 4vw;
@@ -646,16 +646,22 @@ footer div ul a .bi-twitch:hover {
 
 @media screen and (max-width: 480px) {
   body main .carrera .nombres-podio {
-    width: 100%;
-    justify-content: center;
+    width: fit-content;
+    margin: 0 0 0 2%;
   }
   body main .carrera .nombres-podio .practice {
-    width: 100%;
+    width: 90px;
     text-align: center;
   }
+  body main .carrera .nombres-podio .practice .practice2 p {
+    font-size: 3vw;
+  }
+  body main .carrera .nombres-podio .practice h2 {
+    font-size: 3vw;
+  }
   body main .carrera .nombres-podio .puestos {
-    width: 175%;
-    height: 162px;
+    width: 240px;
+    height: 100px;
   }
   body main .carrera .nombres-podio .puestos .puesto-piloto {
     display: flex;
@@ -664,19 +670,18 @@ footer div ul a .bi-twitch:hover {
     padding-right: 1%;
   }
   body main .carrera .nombres-podio .puestos .puesto-piloto h3 {
-    min-width: 33px;
     color: white;
     border-right: 2px solid rgba(255, 255, 255, 0.616);
     padding-right: 10px;
     text-align: center;
-    font-size: medium;
+    font-size: 4vw;
     font-weight: bold;
     margin: 0;
   }
   body main .carrera .nombres-podio .puestos .puesto-piloto h2 {
     padding-left: 10px;
     width: 210px;
-    font-size: 14px;
+    font-size: 3vw;
     color: white;
     margin: 0;
   }
@@ -686,13 +691,20 @@ footer div ul a .bi-twitch:hover {
     align-items: center;
     background-color: rgb(68, 67, 67);
     border-radius: 20px;
-    width: 25%;
+    width: 32%;
     max-height: 41px;
   }
   body main .carrera .nombres-podio .puestos .puesto-piloto .crono p {
     margin: 0;
     font-size: 10px;
     color: rgba(255, 255, 255, 0.493);
+  }
+  body main .video-head .vid {
+    min-height: auto;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: linear-gradient(180deg, rgb(0, 0, 0) 8%, rgb(0, 89, 79) 100%);
   }
   body main .video-head .vid h1 {
     text-align: center;
@@ -709,8 +721,9 @@ footer div ul a .bi-twitch:hover {
     height: 100%;
   }
   body main .video-head .content-vid .st-v h2 {
-    left: 28%;
-    padding-left: 10px;
+    left: 23%;
+    top: -29px;
+    margin: 0;
   }
   body main .video-head .content-vid .st-v .vid-start {
     width: 100%;
@@ -730,6 +743,9 @@ footer div ul a .bi-twitch:hover {
     width: 100%;
     text-align: center;
   }
+  body main .video-head .content-vid .feature-vid h2 {
+    padding: 0;
+  }
   body main .video-head .content-vid .feature-vid .vid-start-2 {
     padding: 0 8% 0 8%;
   }
@@ -739,6 +755,9 @@ footer div ul a .bi-twitch:hover {
   body main .video-head h2 {
     font-size: 25px;
     padding-left: 5%;
+  }
+  body main .features {
+    height: 300px;
   }
   body main .highlights .cont-high {
     flex-direction: column;
@@ -755,8 +774,7 @@ footer div ul a .bi-twitch:hover {
   body main .related h2 {
     padding-top: 15px;
     font-size: 25px;
-    padding-left: 5%;
-    padding-bottom: 20px;
+    padding: 0;
   }
   body main .related .grid-related {
     gap: 30px;
@@ -768,21 +786,33 @@ footer div ul a .bi-twitch:hover {
     width: 100%;
     margin-top: 4%;
     border-radius: 0 20px 20px 20px;
+    position: relative;
   }
   body main .related .grid-related .grid-rel-fila .video-f1 a, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a {
     display: flex;
   }
   body main .related .grid-related .grid-rel-fila .video-f1 a .video-play, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a .video-play, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a .video-play, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a .video-play, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a .video-play, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a .video-play, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a .video-play {
-    height: 100%;
+    width: auto;
   }
   body main .related .grid-related .grid-rel-fila .video-f1 a .video-play .img-video-f1, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a .video-play .img-video-f1, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a .video-play .img-video-f1, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a .video-play .img-video-f1, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a .video-play .img-video-f1, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a .video-play .img-video-f1, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a .video-play .img-video-f1 {
-    width: 210px;
-    height: 258px;
+    width: 145px;
+    height: 130px;
+  }
+  body main .related .grid-related .grid-rel-fila .video-f1 a .text-video, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a .text-video, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a .text-video, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a .text-video, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a .text-video, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a .text-video, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a .text-video {
+    width: 200px;
+    position: absolute;
+    right: 0;
   }
   body main .related .grid-related .grid-rel-fila .video-f1 a .text-video i, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a .text-video i, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a .text-video i, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a .text-video i, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a .text-video i, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a .text-video i, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a .text-video i {
     left: -50px;
-    top: 0;
-    border-radius: 0 0 0 20px;
+    top: 84px;
+    border-radius: 12px 0 0 0;
+  }
+  body main .related .grid-related .grid-rel-fila .video-f1 a .text-video h3, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a .text-video h3, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a .text-video h3, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a .text-video h3, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a .text-video h3, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a .text-video h3, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a .text-video h3 {
+    font-size: 3vw;
+  }
+  body main .related .grid-related .grid-rel-fila .video-f1 a .text-video p, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a .text-video p, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a .text-video p, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a .text-video p, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a .text-video p, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a .text-video p, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a .text-video p {
+    font-size: 3vw;
   }
   body main .related .grid-related .grid-rel-fila .video-f1 a:hover .text-video, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a:hover .text-video, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a:hover .text-video, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a:hover .text-video, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a:hover .text-video, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a:hover .text-video, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a:hover .text-video {
     transform: scaleY(1);
@@ -1007,36 +1037,99 @@ footer div ul a .bi-twitch:hover {
     height: 200px;
   }
   body main .pilotos-grid {
-    height: 6850px;
+    grid-template-rows: none;
   }
   body main .pilotos-grid .filas {
     flex-direction: column;
+    gap: 0;
+  }
+  body main .pilotos-grid .filas .pilotos {
+    height: auto;
   }
   body main .pilotos-grid .filas .pilotos .face {
-    width: 75vw;
+    width: 80vw;
+  }
+  body main .pilotos-grid .filas .pilotos .front .cabecera-piloto h2 {
+    font-size: 10vw;
+    margin: 0;
+    padding-left: 5%;
+  }
+  body main .pilotos-grid .filas .pilotos .front .cabecera-piloto div {
+    padding-right: 5%;
+  }
+  body main .pilotos-grid .filas .pilotos .front .cabecera-piloto div h2 {
+    font-size: 6vw;
+  }
+  body main .pilotos-grid .filas .pilotos .front .cabecera-piloto div h3 {
+    font-size: 3vw;
+    width: 130%;
+    margin: 0;
+  }
+  body main .pilotos-grid .filas .pilotos .front .cara-piloto .piloto-texto h5 {
+    font-size: 12vw;
+  }
+  body main .pilotos-grid .filas .pilotos .front .cara-piloto img {
+    width: 170px;
   }
   body main .pilotos-grid .filas .pilotos .back {
-    height: 87%;
+    height: 100%;
   }
   body main .pilotos-grid .filas .pilotos .back img {
     right: 0%;
     top: 0%;
     width: 50%;
   }
+  body main .pilotos-grid .filas .pilotos .back .standings thead tr th {
+    font-size: 3vw;
+  }
+  body main .pilotos-grid .filas .pilotos .back .standings tbody tr {
+    font-size: 3vw;
+  }
   body main .pilotos-grid .filas-4 {
     padding: 0 10% 0 10%;
     flex-direction: column;
   }
+  body main .pilotos-grid .filas-4 .pilotos {
+    height: auto;
+  }
   body main .pilotos-grid .filas-4 .pilotos .face {
-    width: 75vw;
+    width: 80vw;
+  }
+  body main .pilotos-grid .filas-4 .pilotos .front .cabecera-piloto h2 {
+    font-size: 10vw;
+    margin: 0;
+    padding-left: 5%;
+  }
+  body main .pilotos-grid .filas-4 .pilotos .front .cabecera-piloto div {
+    padding-right: 5%;
+  }
+  body main .pilotos-grid .filas-4 .pilotos .front .cabecera-piloto div h2 {
+    font-size: 6vw;
+  }
+  body main .pilotos-grid .filas-4 .pilotos .front .cabecera-piloto div h3 {
+    font-size: 3vw;
+    width: 130%;
+    margin: 0;
+  }
+  body main .pilotos-grid .filas-4 .pilotos .front .cara-piloto .piloto-texto h5 {
+    font-size: 12vw;
+  }
+  body main .pilotos-grid .filas-4 .pilotos .front .cara-piloto img {
+    width: 170px;
   }
   body main .pilotos-grid .filas-4 .pilotos .back {
-    height: 87%;
+    height: 100%;
   }
   body main .pilotos-grid .filas-4 .pilotos .back img {
     right: 0%;
     top: 0%;
     width: 50%;
+  }
+  body main .pilotos-grid .filas-4 .pilotos .back .standings thead tr th {
+    font-size: 3vw;
+  }
+  body main .pilotos-grid .filas-4 .pilotos .back .standings tbody tr {
+    font-size: 3vw;
   }
   body main .pilotos-grid .publicidad-pilotos {
     height: 200px;
@@ -1597,7 +1690,7 @@ footer div ul a .bi-twitch:hover {
     height: 280px;
   }
   body main .morenews {
-    margin-top: -55%;
+    margin-top: -43%;
     display: flex;
     flex-direction: column;
   }

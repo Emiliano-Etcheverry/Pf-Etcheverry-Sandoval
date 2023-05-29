@@ -40,7 +40,7 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-        min-width: 466px;
+        
 
         .race-time{
             padding-bottom: 2%;
@@ -111,7 +111,7 @@ body{
 
             .carrera{
                 display: inline-block;
-                padding: 1%;
+                padding: 2%;
                 height: fit-content;
                 .lap-day{
                     width: 100%;
@@ -135,6 +135,7 @@ body{
                 .lap-time{
                     justify-content: start;
                     padding-left: 8%;
+                    min-width: none;
                     .race-time{
                         
                         h2{

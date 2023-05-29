@@ -260,24 +260,90 @@ body{
             }
 
             .pilotos-grid{
-                height: 6850px;
+                grid-template-rows: none;
 
                 .filas{
                     flex-direction: column;
+                    gap: 0;
 
                     .pilotos{
+                        height: auto;
 
                         .face{
-                            width: 75vw;
+                            width: 80vw;
+                        }
+
+                        .front{
+
+                            .cabecera-piloto{
+
+                                h2{
+                                    font-size: 10vw;
+                                    margin: 0;
+                                    padding-left: 5%;
+                                }
+
+                                div{
+                                    padding-right: 5%;
+
+                                    h2{
+                                        font-size: 6vw;
+                                    }
+
+                                    h3{
+                                        font-size: 3vw;
+                                        width: 130%;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+
+                            .cara-piloto{
+
+                                .piloto-texto{
+
+                                    h4{
+
+                                    }
+
+                                    h5{
+                                        font-size: 12vw;
+                                    }
+                                }
+
+                                img{
+                                    width: 170px;
+                                }
+                            }
                         }
 
                         .back{
-                            height: 87%;
+                            height: 100%;
                             
                             img{
                                 right: 0%;
                                 top: 0%;
                                 width: 50%;
+                            }
+
+                            .standings{
+
+                                thead{
+
+                                    tr{
+
+                                        th{
+                                            font-size: 3vw;
+                                        }
+                                    }
+                                }
+
+                                tbody{
+
+                                    tr{
+                                        font-size: 3vw;
+                                    }
+                                }
                             }
                         }     
                     }
@@ -288,18 +354,83 @@ body{
                     flex-direction: column;
 
                     .pilotos{
-
+                        height: auto;
+                        
                         .face{
-                            width: 75vw;
+                            width: 80vw;
+                        }
+
+                        .front{
+
+                            .cabecera-piloto{
+
+                                h2{
+                                    font-size: 10vw;
+                                    margin: 0;
+                                    padding-left: 5%;
+                                }
+
+                                div{
+                                    padding-right: 5%;
+
+                                    h2{
+                                        font-size: 6vw;
+                                    }
+
+                                    h3{
+                                        font-size: 3vw;
+                                        width: 130%;
+                                        margin: 0;
+                                    }
+                                }
+                            }
+
+                            .cara-piloto{
+
+                                .piloto-texto{
+
+                                    h4{
+
+                                    }
+
+                                    h5{
+                                        font-size: 12vw;
+                                    }
+                                }
+
+                                img{
+                                    width: 170px;
+                                }
+                            }
                         }
 
                         .back{
-                            height: 87%;
+                            height: 100%;
                             
                             img{
                                 right: 0%;
                                 top: 0%;
                                 width: 50%;
+                            }
+
+                            .standings{
+
+                                thead{
+
+                                    tr{
+
+                                        th{
+                                            font-size: 3vw;
+                                        }
+                                    }
+                                }
+
+                                tbody{
+
+                                    tr{
+                                        font-size: 3vw;
+                                    }
+                                }
                             }
                         }     
                     }
