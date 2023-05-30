@@ -333,7 +333,7 @@ footer div ul a .bi-twitch:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../../img/lineas-diag.png);
+  background-image: url(../img/lineas-diag.png);
   background-size: 500px;
   background-color: rgb(44, 44, 44);
   text-align: center;
@@ -589,7 +589,7 @@ footer div ul a .bi-twitch:hover {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  background-image: url(../../img/lineas-diag.png);
+  background-image: url(../img/lineas-diag.png);
   background-size: contain;
 }
 .highlights .cont-high .card-high {
@@ -1024,7 +1024,7 @@ footer div ul a .bi-twitch:hover {
   height: 300px;
 }
 .publicidad-pilotos .publi-container {
-  background-image: url(../../img/fondo-lineas.png);
+  background-image: url(../img/fondo-lineas.png);
   background-size: cover;
   padding: 20px;
 }
@@ -1191,7 +1191,7 @@ footer div ul a .bi-twitch:hover {
   border-bottom: 8px solid #00352F;
   position: relative;
   height: 100%;
-  background-image: url(../../img/fondo-lineas.png);
+  background-image: url(../img/fondo-lineas.png);
   background-size: contain;
   background-color: #77a799;
   border-radius: 20px 20px 0 0;
@@ -1306,7 +1306,7 @@ footer div ul a .bi-twitch:hover {
 .position-pilotos .contenedor-acordeon .acordeon .contenido-acordeon {
   display: flex;
   background-color: #00352F;
-  background-image: url(../../img/lineas-diag.png);
+  background-image: url(../img/lineas-diag.png);
   background-size: cover;
   max-height: 0;
   overflow: hidden;
@@ -1555,7 +1555,7 @@ footer div ul a .bi-twitch:hover {
   background: linear-gradient(180deg, rgb(0, 0, 0) 8%, rgb(0, 89, 79) 100%, rgb(97, 143, 255) 100%, rgb(95, 105, 125) 100%, rgb(0, 212, 255) 100%);
 }
 .publicidad .publi-container {
-  background-image: url(../../img/fondo-lineas.png);
+  background-image: url(../img/lineas-diag.png);
   background-size: cover;
   padding: 20px;
 }
@@ -1581,7 +1581,7 @@ footer div ul a .bi-twitch:hover {
   border-top: 8px solid #00352F;
   border-radius: 0 20px 0 0;
   position: relative;
-  background-image: url(../../img/fondo-lineas-card.png);
+  background-image: url(../img/fondo-lineas-card.png);
   background-size: cover;
 }
 .contenedor-grid .newvid .sticky-top {
