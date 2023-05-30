@@ -647,7 +647,7 @@ footer div ul a .bi-twitch:hover {
 @media screen and (max-width: 480px) {
   body main .carrera .nombres-podio {
     width: fit-content;
-    margin: 0 0 0 2%;
+    margin: 0 0 0 8%;
   }
   body main .carrera .nombres-podio .practice {
     width: 90px;
@@ -809,10 +809,10 @@ footer div ul a .bi-twitch:hover {
     border-radius: 12px 0 0 0;
   }
   body main .related .grid-related .grid-rel-fila .video-f1 a .text-video h3, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a .text-video h3, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a .text-video h3, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a .text-video h3, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a .text-video h3, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a .text-video h3, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a .text-video h3 {
-    font-size: 3vw;
+    font-size: 2vw;
   }
   body main .related .grid-related .grid-rel-fila .video-f1 a .text-video p, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a .text-video p, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a .text-video p, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a .text-video p, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a .text-video p, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a .text-video p, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a .text-video p {
-    font-size: 3vw;
+    font-size: 2.5vw;
   }
   body main .related .grid-related .grid-rel-fila .video-f1 a:hover .text-video, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start .video-1 a:hover .text-video, .video-head .content-vid .st-v .vid-start body main .related .grid-related .grid-rel-fila .video-1 a:hover .text-video, body main .related .grid-related .grid-rel-fila .video-head .content-vid .st-v .vid-start-2 .video-2 a:hover .text-video, .video-head .content-vid .st-v .vid-start-2 body main .related .grid-related .grid-rel-fila .video-2 a:hover .text-video, body main .related .grid-related .grid-rel-fila .video-head .content-vid .feature-vid .video-2 a:hover .text-video, .video-head .content-vid .feature-vid body main .related .grid-related .grid-rel-fila .video-2 a:hover .text-video {
     transform: scaleY(1);
@@ -1167,14 +1167,8 @@ footer div ul a .bi-twitch:hover {
   left: 8%;
   bottom: 52%;
 }
-.podium .puesto2 .name-podio .pais2 {
-  width: 22%;
-}
 .podium .puesto1 {
   width: 100%;
-}
-.podium .puesto1 .name-podio .pais1 {
-  width: 22%;
 }
 .podium .puesto3 {
   width: 80%;
@@ -1186,9 +1180,6 @@ footer div ul a .bi-twitch:hover {
   bottom: 70%;
   font-size: 500%;
 }
-.podium .puesto3 .name-podio .pais3 {
-  width: 22%;
-}
 
 .podio, .podium .puesto2, .podium .puesto1, .podium .puesto3 {
   display: flex;
@@ -1197,15 +1188,21 @@ footer div ul a .bi-twitch:hover {
   box-shadow: 5px 5px 20px;
 }
 .podio .podio-piloto, .podium .puesto2 .podio-piloto, .podium .puesto1 .podio-piloto, .podium .puesto3 .podio-piloto {
-  border-bottom: 8px solid red;
+  border-bottom: 8px solid #00352F;
   position: relative;
   height: 100%;
+  background-image: url(../../img/fondo-lineas.png);
+  background-size: contain;
+  background-color: #77a799;
+  border-radius: 20px 20px 0 0;
 }
 .podio .podio-piloto h2, .podium .puesto2 .podio-piloto h2, .podium .puesto1 .podio-piloto h2, .podium .puesto3 .podio-piloto h2 {
   position: absolute;
   left: 5%;
-  bottom: 70%;
-  font-size: 500%;
+  top: 5%;
+  font-size: 5vw;
+  color: white;
+  font-weight: bolder;
 }
 .podio .podio-piloto .podio-img, .podium .puesto2 .podio-piloto .podio-img, .podium .puesto1 .podio-piloto .podio-img, .podium .puesto3 .podio-piloto .podio-img {
   width: 100%;
@@ -1220,119 +1217,150 @@ footer div ul a .bi-twitch:hover {
   border-radius: 0 0 25px 25px;
 }
 .podio .name-podio h3, .podium .puesto2 .name-podio h3, .podium .puesto1 .name-podio h3, .podium .puesto3 .name-podio h3, .podio .name-podio h2, .podium .puesto2 .name-podio h2, .podium .puesto1 .name-podio h2, .podium .puesto3 .name-podio h2 {
-  font-size: 170%;
+  font-size: 2vw;
+}
+.podio .name-podio img, .podium .puesto2 .name-podio img, .podium .puesto1 .name-podio img, .podium .puesto3 .name-podio img {
+  width: 30%;
+  height: 100%;
 }
 
 .position-pilotos {
+  background-color: #00594F;
+  padding-top: 20px;
+}
+.position-pilotos .contenedor-acordeon {
   padding: 2% 5% 2% 5%;
   display: flex;
   flex-direction: column;
   position: relative;
   gap: 5px;
 }
-.position-pilotos .stand {
+.position-pilotos .contenedor-acordeon h2 {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+.position-pilotos .contenedor-acordeon .acordeon .btn-acordeon {
+  display: none;
+}
+.position-pilotos .contenedor-acordeon .acordeon .btn-acordeon:checked ~ .contenido-acordeon {
+  max-height: 700px;
+}
+.position-pilotos .contenedor-acordeon .acordeon label {
+  display: block;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+  margin: 0;
+}
+.position-pilotos .contenedor-acordeon .acordeon label .stand {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  background-color: rgb(250, 245, 239);
+  background-color: #00352F;
   padding-left: 20px;
-  border-radius: 20px;
+  transition: 0.3s;
 }
-.position-pilotos .stand .st-name {
+.position-pilotos .contenedor-acordeon .acordeon label .stand:hover {
+  background-color: #B5FFE9;
+}
+.position-pilotos .contenedor-acordeon .acordeon label .stand .st-name {
   display: flex;
   align-items: center;
   gap: 2%;
   width: 80%;
 }
-.position-pilotos .stand .st-name h2 {
+.position-pilotos .contenedor-acordeon .acordeon label .stand .st-name h2 {
   border-right: 3px solid red;
   padding-right: 2%;
   width: 50px;
+  margin: 6px;
 }
-.position-pilotos .stand img {
-  display: none;
+.position-pilotos .contenedor-acordeon .acordeon label .stand .st-name h3 {
+  margin: 0;
 }
-.position-pilotos .stand .points {
+.position-pilotos .contenedor-acordeon .acordeon label .stand .st-name h4 {
+  margin: 0;
+}
+.position-pilotos .contenedor-acordeon .acordeon label .stand .points {
   display: flex;
   align-items: center;
   padding: 8px 20px 8px 20px;
   gap: 2%;
+  text-align: center;
 }
-.position-pilotos .stand .points h2 {
+.position-pilotos .contenedor-acordeon .acordeon label .stand .points h2 {
   background-color: black;
   border-radius: 20px;
   color: white;
   margin: 0;
-  width: 200px;
+  width: 115px;
+  font-size: 20px;
 }
-.position-pilotos .stand .points .toggle {
-  position: absolute;
-  right: -3%;
-  top: 14%;
-  border-radius: 70px;
-  background-color: red;
-  border: solid 5px white;
-  text-align: center;
-}
-.position-pilotos .stand .points .toggle i {
-  font-size: 3vw;
-  text-align: center;
-}
-.position-pilotos .stand .points .bi-chevron-up {
+.position-pilotos .contenedor-acordeon .acordeon label .stand .points .bi-chevron-up {
   display: none;
 }
-.position-pilotos .stand.active {
+.position-pilotos .contenedor-acordeon .acordeon label .primer-acordeon {
+  border-radius: 20px 20px 0 0;
+}
+.position-pilotos .contenedor-acordeon .acordeon .contenido-acordeon {
+  display: flex;
+  background-color: #00352F;
+  background-image: url(../../img/lineas-diag.png);
+  background-size: cover;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  justify-content: space-between;
+  border-radius: 0 0 20px 20px;
+}
+.position-pilotos .contenedor-acordeon .acordeon .contenido-acordeon .persona {
   position: relative;
-  height: 500px;
 }
-.position-pilotos .stand.active .st-name {
+.position-pilotos .contenedor-acordeon .acordeon .contenido-acordeon .persona .persona-piloto {
+  width: 38vw;
+  height: 100%;
+}
+.position-pilotos .contenedor-acordeon .acordeon .contenido-acordeon .persona .persona-nacionalidad {
   position: absolute;
-  bottom: 5px;
-  left: 5px;
-}
-.position-pilotos .stand.active .st-name h2 {
-  border-right: 3px solid red;
-  padding-right: 2%;
-  width: 50px;
-}
-.position-pilotos .stand.active img {
-  position: absolute;
-  left: -50px;
-  top: -25px;
-  display: inline-block;
-  height: 250px;
-  overflow-y: 50px;
-}
-.position-pilotos .stand.active .points {
-  position: absolute;
+  top: 0;
   right: 0;
-  bottom: 5px;
+  width: 8vw;
 }
-.position-pilotos .stand.active .points h2 {
-  background-color: black;
-  border-radius: 20px;
-  color: white;
-  margin: 0;
-  width: 200px;
+.position-pilotos .contenedor-acordeon .acordeon .contenido-acordeon .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
 }
-.position-pilotos .stand.active .points .toggle .bi-chevron-up {
-  display: inline-block;
+.position-pilotos .contenedor-acordeon .acordeon .contenido-acordeon .info .merchandise img {
+  width: 35vw;
 }
-.position-pilotos .stand.active .points .toggle .bi-chevron-down {
-  display: none;
+.position-pilotos .contenedor-acordeon .acordeon .contenido-acordeon .info table {
+  width: 100%;
+  background-color: #B5FFE9;
+  text-align: center;
+  border-collapse: collapse;
+}
+.position-pilotos .contenedor-acordeon .acordeon .contenido-acordeon .info table td {
+  padding: 5px 15px 5px 5px;
+  font-size: 1.5vw;
+}
+.position-pilotos .contenedor-acordeon .acordeon .contenido-acordeon .info table tr:nth-child(even) {
+  background-color: #7EB09B;
 }
 
 .f1topics {
-  padding: 0 2% 0 2%;
+  padding: 1% 2% 0 2%;
+  background-color: #00594F;
 }
 .f1topics h2 {
-  background-color: white;
-  padding-left: 2%;
+  color: white;
 }
 .f1topics .f1-new-topics {
-  border-top: 8px solid black;
-  border-right: 8px solid black;
-  border-radius: 0 20px 0 0;
+  border-top: 8px solid #00352F;
+  border-right: 8px solid #00352F;
+  border-radius: 20px 20px 0 0;
   padding-top: 2%;
   padding-right: 2%;
   display: flex;
@@ -1340,7 +1368,7 @@ footer div ul a .bi-twitch:hover {
   align-items: center;
   gap: 30px;
   margin-top: 2%;
-  margin-bottom: 2%;
+  padding-bottom: 2%;
   width: 100%;
 }
 .f1topics .f1-new-topics h3 {
@@ -1349,53 +1377,71 @@ footer div ul a .bi-twitch:hover {
 .f1topics .f1-new-topics .refs-e {
   display: flex;
   background-image: url(../img/e-sport.jpg);
-  background-repeat: none;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 170px;
   width: 302px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  border-radius: 20px 0 0 0;
+  transition: 0.3s;
+}
+.f1topics .f1-new-topics .refs-e:hover {
+  filter: grayscale(100%);
 }
 .f1topics .f1-new-topics .refs-s {
   display: flex;
   position: relative;
   background-image: url(https://media.formula1.com/image/upload/f_auto/q_auto/v1679313708/fom-website/2018-redesign-assets/Tag%20collections/Other/NetZero_Car_i4_i3_0004.jpg.transform/5col/image.jpg);
-  background-repeat: none;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 170px;
   width: 302px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
+}
+.f1topics .f1-new-topics .refs-s:hover {
+  filter: grayscale(100%);
 }
 .f1topics .f1-new-topics .refs-p {
   display: flex;
   position: relative;
   background-image: url(https://media.formula1.com/image/upload/content/dam/fom-website/2018-redesign-assets/Tag%20collections/Other/Beyond%20The%20Grid%20Header%202023.png.transform/5col/image.png);
-  background-repeat: none;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 170px;
   width: 302px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
 }
+.f1topics .f1-new-topics .refs-p:hover {
+  filter: grayscale(100%);
+}
 .f1topics .f1-new-topics .refs-c {
   display: flex;
   position: relative;
-  background-image: url(https://media.formula1.com/image/upload/content/dam/fom-website/2018-redesign-assets/Tag%20collections/Other/Race-calendar.jpg.transform/5col/image.jpg);
-  background-repeat: none;
-  background-size: 100%;
+  background-image: url(https://media.formula1.com/content/dam/fom-website/sutton/2022/Brazil/Saturday/1441003037.jpg.img.320.medium.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 170px;
   width: 302px;
   justify-content: center;
   align-items: center;
   text-decoration: none;
   text-align: center;
+  border-radius: 0 20px 0 0;
+}
+.f1topics .f1-new-topics .refs-c:hover {
+  filter: grayscale(100%);
 }
 
 @media screen and (max-width: 750px) {
+  body main {
+    background-color: #00594F;
+  }
   body main .posiciones {
     height: 60px;
   }
@@ -1403,13 +1449,16 @@ footer div ul a .bi-twitch:hover {
     display: none;
   }
   body main .podium .puesto1 {
-    width: 340px;
+    width: 70%;
     margin: 10px 0px 30px 0px;
   }
   body main .podium .puesto1 .podio .podio-piloto h2, body main .podium .puesto1 .puesto2 .podio-piloto h2, body main .podium .puesto1 .puesto1 .podio-piloto h2, body main .podium .puesto1 .puesto3 .podio-piloto h2 {
     left: 6%;
     bottom: 67%;
     font-size: 401%;
+  }
+  body main .podium .puesto1 .podio .podio-piloto img, body main .podium .puesto1 .puesto2 .podio-piloto img, body main .podium .puesto1 .puesto1 .podio-piloto img, body main .podium .puesto1 .puesto3 .podio-piloto img {
+    width: 60vw;
   }
   body main .podium .puesto1 .podio .name-podio, body main .podium .puesto1 .puesto2 .name-podio, body main .podium .puesto1 .puesto1 .name-podio, body main .podium .puesto1 .puesto3 .name-podio {
     align-items: center;
@@ -1424,42 +1473,43 @@ footer div ul a .bi-twitch:hover {
   body main .podium .puesto3 {
     display: none;
   }
-  body main .position-pilotos {
-    gap: 3px;
-    margin: 0% 2% 8% 2%;
+  body main .position-pilotos .contenedor-acordeon {
+    padding: 0% 5% 2% 5%;
   }
-  body main .position-pilotos .stand {
+  body main .position-pilotos .contenedor-acordeon .acordeon label .stand {
     padding: 0;
   }
-  body main .position-pilotos .stand .st-name {
+  body main .position-pilotos .contenedor-acordeon .acordeon label .stand .st-name {
     gap: 0;
-    width: 300px;
-    padding-right: 50px;
+    padding-right: 6%;
     padding-left: 6%;
   }
-  body main .position-pilotos .stand .st-name h2 {
-    font-size: larger;
+  body main .position-pilotos .contenedor-acordeon .acordeon label .stand .st-name h2 {
+    font-size: 6vw;
     padding-right: 15px;
     margin: 0;
     width: 40px;
   }
-  body main .position-pilotos .stand .st-name h3 {
+  body main .position-pilotos .contenedor-acordeon .acordeon label .stand .st-name h3 {
     display: none;
   }
-  body main .position-pilotos .stand .st-name h4 {
+  body main .position-pilotos .contenedor-acordeon .acordeon label .stand .st-name h4 {
     margin: 0;
     padding-left: 5%;
-    font-size: larger;
+    font-size: 4vw;
   }
-  body main .position-pilotos .stand .st-name p {
+  body main .position-pilotos .contenedor-acordeon .acordeon label .stand .st-name p {
     display: none;
   }
-  body main .position-pilotos .stand .points h2 {
-    font-size: large;
-    border-radius: 20px;
-    width: 95px;
+  body main .position-pilotos .contenedor-acordeon .acordeon label .stand .points {
+    padding: 0 3px 0 0;
   }
-  body main .position-pilotos .stand .points i {
+  body main .position-pilotos .contenedor-acordeon .acordeon label .stand .points h2 {
+    font-size: 3.5vw;
+    border-radius: 20px;
+    width: 70px;
+  }
+  body main .position-pilotos .contenedor-acordeon .acordeon label .stand .points i {
     font-size: 25px;
   }
   body main .f1topics {
@@ -1474,28 +1524,24 @@ footer div ul a .bi-twitch:hover {
     padding-bottom: 4%;
   }
   body main .f1topics .f1-new-topics .refs-e {
-    width: 390px;
     transition: transform 2;
   }
   body main .f1topics .f1-new-topics .refs-e:hover {
     transform: scale(1.1);
   }
   body main .f1topics .f1-new-topics .refs-s {
-    width: 390px;
     transition: transform 2;
   }
   body main .f1topics .f1-new-topics .refs-s:hover {
     transform: scale(1.1);
   }
   body main .f1topics .f1-new-topics .refs-p {
-    width: 390px;
     transition: transform 2;
   }
   body main .f1topics .f1-new-topics .refs-p:hover {
     transform: scale(1.1);
   }
   body main .f1topics .f1-new-topics .refs-c {
-    width: 390px;
     transition: transform 2;
   }
   body main .f1topics .f1-new-topics .refs-c:hover {
@@ -1712,8 +1758,13 @@ footer div ul a .bi-twitch:hover {
   border-top: 5px solid black;
   border-right: 5px solid black;
   border-radius: 0 5px 0 0;
-  margin: 2% 5% 0 5%;
+  padding: 2% 5% 0 5%;
   padding-top: 1%;
+  background: linear-gradient(180deg, rgb(0, 0, 0) 8%, rgb(0, 89, 79) 100%, rgb(97, 143, 255) 100%, rgb(95, 105, 125) 100%, rgb(0, 212, 255) 100%);
+}
+.contitulo h1 {
+  font-size: 4vw;
+  color: white;
 }
 .contitulo div {
   width: 100%;
@@ -1727,8 +1778,9 @@ footer div ul a .bi-twitch:hover {
   display: grid;
   grid-template-rows: repeat(5, 1fr);
   gap: 2%;
-  margin-top: 50px;
-  margin-bottom: 15%;
+  padding-top: 50px;
+  padding-bottom: 20%;
+  background-color: #00594F;
 }
 .equipos-grid hr {
   width: 95%;
@@ -1741,9 +1793,9 @@ footer div ul a .bi-twitch:hover {
   gap: 4%;
 }
 .equipos-grid .filas-equipos .equipo-auto {
-  border-radius: 0 5px 0 0;
-  border-top: 3px solid black;
-  border-right: 3px solid black;
+  border-radius: 0 20px 0 0;
+  border-top: 3px solid #00352F;
+  border-right: 3px solid #00352F;
   color: rgba(0, 0, 0, 0.493);
   font-size: 100%;
   width: 150%;
@@ -1757,6 +1809,8 @@ footer div ul a .bi-twitch:hover {
 .equipos-grid .filas-equipos .equipo-auto .cabecera-piloto h1 {
   font-weight: bold;
   font-size: 380%;
+  padding-left: 4%;
+  color: white;
 }
 .equipos-grid .filas-equipos .equipo-auto .cabecera-piloto div {
   display: flex;
@@ -1764,19 +1818,21 @@ footer div ul a .bi-twitch:hover {
   align-items: center;
 }
 .equipos-grid .filas-equipos .equipo-auto .cabecera-piloto div h2 {
-  color: black;
+  color: white;
   font-size: 200%;
 }
 .equipos-grid .filas-equipos .equipo-auto .cabecera-piloto div .bg-black {
-  background-color: black;
+  background-color: white;
   border-radius: 10px;
   color: white;
+  padding: 3px;
   margin: 0;
 }
 .equipos-grid .filas-equipos .equipo-auto .nombre-piloto {
   display: flex;
   align-items: center;
-  border-left: 5px solid blue;
+  margin-left: 5px;
+  border-left: 5px solid #B5FFE9;
   justify-content: space-between;
 }
 .equipos-grid .filas-equipos .equipo-auto .nombre-piloto .nombre-p {
@@ -1784,11 +1840,17 @@ footer div ul a .bi-twitch:hover {
   flex-direction: column;
   justify-content: center;
   padding-left: 2%;
-  min-width: 190px;
+}
+.equipos-grid .filas-equipos .equipo-auto .nombre-piloto .nombre-p h3 {
+  color: rgba(255, 255, 255, 0.562);
+  margin: 0;
 }
 .equipos-grid .filas-equipos .equipo-auto .nombre-piloto img {
   width: 18%;
-  padding-right: 2%;
+  margin-right: 2%;
+  background-color: white;
+  box-shadow: 0px 0px 15px 5px;
+  border-radius: 20px;
 }
 .equipos-grid .filas-equipos .equipo-auto .nombres-equipo {
   display: flex;
@@ -1807,14 +1869,16 @@ footer div ul a .bi-twitch:hover {
   border-right: 1px solid black;
   border-radius: 0 0 20px 0;
   width: 100%;
+  margin-left: 2%;
+  padding: 2%;
 }
 .equipos-grid .filas-equipos .equipo-auto .nombres-equipo .teamates .teamate1 h4 {
-  color: rgba(0, 0, 0, 0.493);
+  color: rgba(255, 255, 255, 0.562);
   font-size: 100%;
 }
 .equipos-grid .filas-equipos .equipo-auto .nombres-equipo .teamates .teamate1 h3 {
   font-weight: bold;
-  color: black;
+  color: white;
   font-size: 130%;
   margin: 0;
 }
@@ -1824,13 +1888,14 @@ footer div ul a .bi-twitch:hover {
   border-radius: 0 0 20px 0;
   width: 100%;
   margin-right: 2%;
+  padding: 2%;
 }
 .equipos-grid .filas-equipos .equipo-auto .nombres-equipo .teamates .teamate2 h4 {
-  color: rgba(0, 0, 0, 0.493);
+  color: rgba(255, 255, 255, 0.562);
   font-size: 100%;
 }
 .equipos-grid .filas-equipos .equipo-auto .nombres-equipo .teamates .teamate2 h3 {
-  color: black;
+  color: white;
   font-weight: bold;
   font-size: 130%;
   margin: 0;
@@ -1839,7 +1904,7 @@ footer div ul a .bi-twitch:hover {
 @media screen and (max-width: 480px) {
   body main .equipos-grid {
     gap: 0;
-    padding: 0;
+    padding-bottom: 5%;
   }
   body main .equipos-grid .filas-equipos {
     flex-direction: column;
@@ -1848,6 +1913,24 @@ footer div ul a .bi-twitch:hover {
   }
   body main .equipos-grid .filas-equipos .equipo-auto {
     width: 100%;
+  }
+  body main .equipos-grid .filas-equipos .equipo-auto .nombre-piloto h3 {
+    font-size: 4vw;
+  }
+  body main .equipos-grid .filas-equipos .equipo-auto .nombres-equipo .teamates .teamate1 h4 {
+    font-size: 3vw;
+  }
+  body main .equipos-grid .filas-equipos .equipo-auto .nombres-equipo .teamates .teamate1 h3 {
+    font-size: 3vw;
+  }
+  body main .equipos-grid .filas-equipos .equipo-auto .nombres-equipo .teamates .teamate2 h4 {
+    font-size: 3vw;
+  }
+  body main .equipos-grid .filas-equipos .equipo-auto .nombres-equipo .teamates .teamate2 h3 {
+    font-size: 3vw;
+  }
+  body main .equipos-grid .filas-equipos .equipo-auto .nombres-equipo img {
+    width: 70vw;
   }
 }
 

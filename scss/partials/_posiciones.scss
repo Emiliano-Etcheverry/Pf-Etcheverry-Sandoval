@@ -34,13 +34,6 @@
                 bottom: 52%;
             }
         }
-
-        .name-podio{
-            
-            .pais2{
-                width: 22%;
-            }
-        }
         
     }
 
@@ -48,12 +41,6 @@
         width: 100%;
         @extend .podio;
 
-        .name-podio{
-
-            .pais1{
-                width: 22%;
-            }
-        }
     }
     
     .puesto3{
@@ -69,13 +56,6 @@
                 bottom: 70%;
                 font-size: 500%;
             }
-        }
-        
-        .name-podio{
-
-            .pais3{
-                width: 22%;
-            }    
         }        
     }
 }
@@ -88,15 +68,21 @@
     box-shadow: 5px 5px 20px;
 
     .podio-piloto{
-        border-bottom: 8px solid red;
+        border-bottom: 8px solid $dGreen;
         position: relative;
         height: 100%;
-   
+        background-image: url(../../img/fondo-lineas.png);
+        background-size: contain;
+        background-color: #77a799;
+        border-radius: 20px 20px 0 0;
+        
         h2{
             position: absolute;
             left: 5%;
-            bottom: 70%;
-            font-size: 500%;
+            top: 5%;
+            font-size: 5vw;
+            color: white;
+            font-weight: bolder;
         }
 
         .podio-img{
@@ -115,144 +101,194 @@
         border-radius: 0 0 25px 25px;
     
         h3,h2{
-            font-size: 170%;
+            font-size: 2vw;
+        }
+
+        img{
+            width: 30%;
+            height: 100%;
         }
     }
 }
 
 
 .position-pilotos{
-    padding: 2% 5% 2% 5%;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    gap: 5px;
+    background-color: $Green;
+    padding-top: 20px;
 
-    .stand{
+    .contenedor-acordeon{
+        padding: 2% 5% 2% 5%;
         display: flex;
-        justify-content: space-between;
-        text-align: center;
-        background-color: rgb(250, 245, 239);
-        padding-left: 20px;
-        border-radius: 20px;
-    
-        .st-name{
-            display: flex;
-            align-items: center;
-            gap: 2%; 
-            width: 80%;
-        
-            h2{
-                border-right: 3px solid red;
-                padding-right: 2%;
-                width: 50px;
-            }
+        flex-direction: column;
+        position: relative;
+        gap: 5px;
+
+        h2{
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 35px;
         }
 
-        img{
-            display: none;
-        }
 
-        .points{
-            display: flex;
-            align-items: center;
-            padding: 8px 20px 8px 20px;
-            gap: 2%;
-        
-            h2{
-                background-color: black;
-                border-radius: 20px;
-                color: white;
-                margin: 0;
-                width: 200px;
-            }
-        
-            .toggle{
-                
-                position: absolute;
-                right: -3%;
-                top: 14%;
-                border-radius: 70px;
-                background-color: red;
-                border: solid 5px white;
-                text-align: center;
-                i{
-                    font-size: 3vw; 
-                    text-align: center;    
-                }
-            }
+        .acordeon{
             
-            
-            .bi-chevron-up{
+            .btn-acordeon{
                 display: none;
+                &:checked ~ .contenido-acordeon{
+                    max-height: 700px;
+                    
+                }
             }
-        }
+             
 
-        &.active{
-
-            position: relative;
-            height: 500px;
-    
-        .st-name{
-            position: absolute;
-            bottom: 5px;
-            left: 5px;
-
-        
-            h2{
-                border-right: 3px solid red;
-                padding-right: 2%;
-                width: 50px;
-            }
-        }
-
-        img{
-            position: absolute;
-            left: -50px;
-            top: -25px;
-            display: inline-block;
-            height: 250px;
-            overflow-y: 50px;
-        }
-        .points{
-            position: absolute;
-            right: 0;
-            bottom: 5px;
-        
-            h2{
-                background-color: black;
-                border-radius: 20px;
+            label{
+                display: block;
+                font-size: 20px;
                 color: white;
+                cursor: pointer;
                 margin: 0;
-                width: 200px;
-            }
-        
-            .toggle{
+
+                .stand{
+                    display: flex;
+                    justify-content: space-between;
+                    text-align: center;
+                    background-color: $dGreen;
+                    padding-left: 20px;
+                    transition: .3s;
+
+                    &:hover{
+                        background-color: $aquamarine;
+                    }
+
+                    .st-name{
+                        display: flex;
+                        align-items: center;
+                        gap: 2%; 
+                        width: 80%;
+                    
+                        h2{
+                            border-right: 3px solid red;
+                            padding-right: 2%;
+                            width: 50px;
+                            margin: 6px;
+                        }
+
+                        h3{
+                            margin: 0;
+                        }
+
+                        h4{
+                            margin: 0;
+                        }
+                    }
+            
+                    .points{
+                        display: flex;
+                        align-items: center;
+                        padding: 8px 20px 8px 20px;
+                        gap: 2%;
+                        text-align: center;
+
+                        h2{
+                            background-color: black;
+                            border-radius: 20px;
+                            color: white;
+                            margin: 0;
+                            width: 115px;
+                            font-size: 20px;
+                            
+                        }
+   
+                        .bi-chevron-up{
+                            display: none;
+                        }
+                    }
+                }   
                 
-                .bi-chevron-up{
-                    display: inline-block;
+                .primer-acordeon{
+                    border-radius: 20px 20px 0 0;
                 }
 
-                .bi-chevron-down{
-                    display: none;
+            }
+
+            .contenido-acordeon{
+                display: flex;
+                background-color: $dGreen;
+                background-image: url(../../img/lineas-diag.png);
+                background-size: cover;
+                max-height: 0;
+                overflow: hidden;
+                transition: all .5s ease;
+                justify-content: space-between;
+                border-radius: 0 0 20px 20px;
+        
+                .persona{
+                    position: relative;
+                    
+                    .persona-piloto{
+                        width: 38vw;
+                        height: 100%;
+                    }
+                    
+                    .persona-nacionalidad{
+                        position: absolute;
+                        top: 0;
+                        right: 0;
+                        width: 8vw;
+                    }
+            
                 }
-            }            
-        }
+
+                .info{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    width: 100%;
+
+                    .merchandise{
+                
+                        img{
+                            width: 35vw;
+                        }
+                    }
+        
+                    table{
+                        width: 100%;
+                        background-color: $aquamarine;
+                        text-align: center;
+                        border-collapse: collapse;
+                        
+                        td{
+                            padding: 5px 15px 5px 5px;
+                            font-size: 1.5vw;
+                        }
+                        
+                        tr:nth-child(even){
+                            background-color: $cBlue;
+                        }
+                        
+                    }
+                }    
+            }
         }
     }
+    
+   
 }
 
 .f1topics{
-    padding: 0 2% 0 2%;
+    padding: 1% 2% 0 2%;
+    background-color: $Green;
+
     h2{
-        background-color: white;
-        padding-left: 2%;
+        color: white;
+        
     }
 
     .f1-new-topics{
-        border-top: 8px solid black;
-        border-right: 8px solid black;
-        border-radius: 0 20px 0 0;
+        border-top: 8px solid $dGreen;
+        border-right: 8px solid $dGreen;
+        border-radius: 20px 20px 0 0;
         padding-top: 2%;
         padding-right: 2%;
         display: flex;
@@ -260,7 +296,7 @@
         align-items: center;
         gap: 30px;
         margin-top: 2%;
-        margin-bottom: 2%;
+        padding-bottom: 2%;
         width: 100%;
 
         h3{
@@ -270,53 +306,72 @@
         .refs-e{
             display: flex;
             background-image: url(../img/e-sport.jpg);
-            background-repeat: none;
-            background-size: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 170px;
             width: 302px; 
             justify-content: center;
             align-items: center;
             text-decoration: none;
+            border-radius: 20px 0 0 0;
+            transition: .3s;
+
+            &:hover{
+                filter: grayscale(100%);
+            }
         }
         
         .refs-s{
             display: flex;
             position: relative;
             background-image: url(https://media.formula1.com/image/upload/f_auto/q_auto/v1679313708/fom-website/2018-redesign-assets/Tag%20collections/Other/NetZero_Car_i4_i3_0004.jpg.transform/5col/image.jpg);
-            background-repeat: none;
-            background-size: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 170px;
             width: 302px; 
             justify-content: center;
             align-items: center;
             text-decoration: none;
+
+            &:hover{
+                filter: grayscale(100%);
+            }
         }
         
         .refs-p{
             display: flex;
             position: relative;
             background-image: url(https://media.formula1.com/image/upload/content/dam/fom-website/2018-redesign-assets/Tag%20collections/Other/Beyond%20The%20Grid%20Header%202023.png.transform/5col/image.png);
-            background-repeat: none;
-            background-size: 100%;
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 170px;
             width: 302px;
             justify-content: center;
             align-items: center;
             text-decoration: none; 
+
+            &:hover{
+                filter: grayscale(100%);
+            }
         }
         
         .refs-c{
             display: flex;
             position: relative;
-            background-image: url(https://media.formula1.com/image/upload/content/dam/fom-website/2018-redesign-assets/Tag%20collections/Other/Race-calendar.jpg.transform/5col/image.jpg);
-            background-repeat: none;
-            background-size: 100%;
+            background-image: url(https://media.formula1.com/content/dam/fom-website/sutton/2022/Brazil/Saturday/1441003037.jpg.img.320.medium.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
             height: 170px;
             width: 302px; 
             justify-content: center;
             align-items: center;
             text-decoration: none;
             text-align: center;
+            border-radius: 0 20px 0 0;
+            
+            &:hover{
+                filter: grayscale(100%);
+            }
         }
     }
 }
@@ -324,6 +379,7 @@
 body{
     @include media-query(tablet){
         main{
+            background-color: $Green;
 
             .posiciones{
                 height: 60px;
@@ -337,7 +393,7 @@ body{
 
                 .puesto1{
 
-                    width: 340px;
+                    width: 70%;
                     margin: 10px 0px 30px 0px;
                     
                     .podio{
@@ -348,6 +404,10 @@ body{
                                 left: 6%;
                                 bottom: 67%;
                                 font-size: 401%;
+                            }
+
+                            img{
+                                width: 60vw;
                             }
                         }
 
@@ -373,53 +433,62 @@ body{
             }
 
             .position-pilotos{
-                gap: 3px;
-                margin: 0% 2% 8% 2%;
 
-                .stand{
-                    padding: 0;
+                .contenedor-acordeon{
+                    padding: 0% 5% 2% 5%;
 
-                    .st-name{
-                        gap: 0;
-                        width: 300px;
-                        padding-right: 50px;
-                        padding-left: 6%;
+                    .acordeon{
+                        
+                        label{
 
-                        h2{
-                            font-size: larger;
-                            padding-right: 15px;
-                            margin: 0;
-                            width: 40px;
-                        }
-
-                        h3{
-                            display: none;
-                        }
-
-                        h4{
-                            margin: 0;
-                            padding-left: 5%;
-                            font-size: larger;
-                        }
-
-                        p{
-                            display: none;
-                        }
-                    }
-
-                    .points{
-                     
-                        h2{
-                            font-size: large;
-                            border-radius: 20px;
-                            width: 95px;
-                        }
-
-                        i{
-                            font-size: 25px;
+                            .stand{
+                                padding: 0;
+            
+                                .st-name{
+                                    gap: 0;
+                                    padding-right: 6%;
+                                    padding-left: 6%;
+            
+                                    h2{
+                                        font-size: 6vw;
+                                        padding-right: 15px;
+                                        margin: 0;
+                                        width: 40px;
+                                    }
+            
+                                    h3{
+                                        display: none;
+                                    }
+            
+                                    h4{
+                                        margin: 0;
+                                        padding-left: 5%;
+                                        font-size: 4vw;
+                                    }
+            
+                                    p{
+                                        display: none;
+                                    }
+                                }
+            
+                                .points{
+                                 padding: 0 3px 0 0;
+                                    
+                                    h2{
+                                        font-size: 3.5vw;
+                                        border-radius: 20px;
+                                        width: 70px;
+                                    }
+            
+                                    i{
+                                        font-size: 25px;
+                                    }
+                                }
+                            }
                         }
                     }
                 }
+                
             }
 
             .f1topics{
@@ -436,7 +505,7 @@ body{
                     padding-bottom: 4%;
 
                     .refs-e{
-                        width: 390px;
+                       
                         transition: transform 2;
                     &:hover{
                     transform: scale(1.1);
@@ -444,7 +513,7 @@ body{
                     }
 
                     .refs-s{
-                        width: 390px;
+                        
                         transition: transform 2;
                     &:hover{
                     transform: scale(1.1);
@@ -452,7 +521,7 @@ body{
                     }
 
                     .refs-p{
-                        width: 390px;
+                        
                         transition: transform 2;
                     &:hover{
                     transform: scale(1.1);
@@ -460,7 +529,7 @@ body{
                     }
 
                     .refs-c{
-                        width: 390px;
+                       
                         transition: transform 2;
                     &:hover{
                     transform: scale(1.1);
